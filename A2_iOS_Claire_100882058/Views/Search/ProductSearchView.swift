@@ -8,10 +8,10 @@ struct ProductSearchView: View {
     @State private var searchText: String = ""
     @State private var results: [Product] = []
     
-    let suggestions = ["Apple", "laptop", "wireless", "phone", "Samsung"]
+    let suggestions = ["Apple", "laptop", "wireless", "phone"]
     
     var body: some View {
-        NavigationView {
+       
             VStack {
                
                 HStack {
@@ -83,7 +83,7 @@ struct ProductSearchView: View {
                     searchProducts()
             }
             .navigationTitle("Search")
-        }
+        
     }
     
     private func searchProducts() {

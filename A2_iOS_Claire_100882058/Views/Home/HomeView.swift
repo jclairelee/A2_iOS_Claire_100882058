@@ -6,7 +6,7 @@ struct HomeView: View {
     @StateObject private var vm = ProductNavigatorViewModel()
     
     var body: some View {
-        NavigationView {
+    
             ZStack {
                 Color(red: 0.98, green: 0.96, blue: 0.93)
                     .ignoresSafeArea()
@@ -47,5 +47,5 @@ struct HomeView: View {
                 vm.loadProducts(context: viewContext)
             }
         }
-    }
+    
 }
