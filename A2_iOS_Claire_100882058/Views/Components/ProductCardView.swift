@@ -5,33 +5,55 @@ struct ProductCardView: View {
     let product: Product
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 16) {
             
             Text(product.wrappedName)
                 .font(.title2)
-                .fontWeight(.bold)
+                .fontWeight(.semibold)
             
-            Text("Product ID: \(product.productID)")
-                .font(.subheadline)
+            Divider()
             
             Text(product.wrappedDesc)
                 .font(.body)
-            
-            Text("Price: \(product.priceText)")
-                .font(.headline)
-            
-            Text("Provider: \(product.wrappedProvider)")
-                .font(.subheadline)
                 .foregroundColor(.secondary)
+            
+            HStack {
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("Price")
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                    
+                    Text(product.priceText)
+                        .font(.headline)
+                        .fontWeight(.bold)
+                }
+                
+                Spacer()
+                
+                VStack(alignment: .trailing, spacing: 6) {
+                    Text("Provider")
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                    
+                    Text(product.wrappedProvider)
+                        .font(.subheadline)
+                }
+            }
+            
+            Text("ID: \(product.productID)")
+                .font(.caption2)
+                .foregroundColor(.gray)
         }
         .padding()
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color(.systemGray6))
-        .cornerRadius(12)
-        .shadow(radius: 2)
+        .background(
+            RoundedRectangle(cornerRadius: 16)
+                .fill(Color(.systemBackground))
+                .shadow(color: Color.black.opacity(0.08), radius: 8, x: 0, y: 4)
+        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 16)
+                .stroke(Color(.systemGray5), lineWidth: 1)
+        )
+        .padding(.horizontal)
     }
-}
-
-#Preview {
-    Text("Preview not available without Core Data context")
 }
