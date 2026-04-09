@@ -8,6 +8,8 @@ struct ProductSearchView: View {
     @State private var searchText: String = ""
     @State private var results: [Product] = []
     
+    let suggestions = ["Apple", "laptop", "wireless", "phone", "Samsung"]
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -20,11 +22,38 @@ struct ProductSearchView: View {
                         searchProducts()
                     }
                     .buttonStyle(.borderedProminent)
+                    .tint(Color(red: 0.55, green: 0.44, blue: 0.28))
                 }
                 .padding()
                 
+                // Suggestions
+                if searchText.isEmpty {
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack {
+                            ForEach(suggestions, id: \.self) { keyword in
+                                Button {
+                                    searchText = keyword
+                                    searchProducts()
+                                } label: {
+                                    Text(keyword)
+                                        .font(.subheadline)
+                                             .lineLimit(1)
+                                             .truncationMode(.tail)
+                                             .frame(maxWidth: 120)
+                                             .padding(.horizontal, 12)
+                                             .padding(.vertical, 8)
+                                             .background(Color(red: 0.55, green: 0.44, blue: 0.28).opacity(0.15))
+                                             .foregroundColor(Color(red: 0.55, green: 0.44, blue: 0.28))
+                                             .cornerRadius(20)
+                                }
+                            }
+                        }
+                        .padding(.horizontal)
+                    }
+                }
+                
                 // result
-                if results.isEmpty {
+                if results.isEmpty && !searchText.isEmpty {
                     Spacer()
                     Text("No results")
                         .foregroundColor(.secondary)
@@ -43,8 +72,15 @@ struct ProductSearchView: View {
                             Text(product.priceText)
                                 .font(.caption)
                         }
+                        .listRowBackground(Color.white)
                     }
+                    .listStyle(.plain)
+                    .scrollContentBackground(.hidden)
                 }
+            }
+            .background(Color(red: 0.98, green: 0.96, blue: 0.93))
+            .onChange(of: searchText) {
+                    searchProducts()
             }
             .navigationTitle("Search")
         }
