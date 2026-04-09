@@ -12,7 +12,7 @@ struct HomeView: View {
                     .ignoresSafeArea()
                 
                 VStack(spacing: 24) {
-                    Text("Featured Products")
+                    Text("Popular Products")
                         .font(.title2)
                         .fontWeight(.semibold)
                         .foregroundColor(Color(red: 0.55, green: 0.44, blue: 0.28))
@@ -23,7 +23,7 @@ struct HomeView: View {
                         Text("No products available")
                             .foregroundColor(.secondary)
                     }
-//                    Navigation buttons
+//
                     HStack(spacing: 20) {
                         Button("Previous") {
                             vm.previousProduct()
@@ -37,7 +37,39 @@ struct HomeView: View {
                         .buttonStyle(.borderedProminent)
                         .tint(Color(red: 0.55, green: 0.44, blue: 0.28))
                     }
+                    Spacer()
                     
+                
+                        NavigationLink {
+                            ProductListView()
+                        } label: {
+                            Text("View All Products")
+                                .font(.subheadline)
+                                .fontWeight(.semibold)
+                                .frame(maxWidth: .infinity)
+                                .padding()
+                        }
+                        .background(Color(red: 0.55, green: 0.44, blue: 0.28))
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                        
+                        NavigationLink {
+                            ProductSearchView()
+                        } label: {
+                            HStack {
+                                Image(systemName: "magnifyingglass")
+                                Text("Search Products")
+                            }
+                            .font(.subheadline)
+                            .fontWeight(.semibold)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color(red: 0.55, green: 0.44, blue: 0.28), lineWidth: 1)
+                            )
+                        }
+                        .foregroundColor(Color(red: 0.55, green: 0.44, blue: 0.28))
                     Spacer()
                 }
                 .padding()
