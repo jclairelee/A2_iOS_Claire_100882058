@@ -14,6 +14,7 @@
 		7E6DD2DA2F881B9B003B82FD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6DD2D92F881B98003B82FD /* Persistence.swift */; };
 		7E6DD2DC2F881C99003B82FD /* ProductSeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6DD2DB2F881C94003B82FD /* ProductSeeder.swift */; };
 		7E6DD2E12F881E38003B82FD /* Product+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6DD2E02F881E33003B82FD /* Product+Helpers.swift */; };
+		7E6DD2E42F881F86003B82FD /* ProductNavigatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6DD2E32F881F84003B82FD /* ProductNavigatorViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7E6DD2D92F881B98003B82FD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		7E6DD2DB2F881C94003B82FD /* ProductSeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSeeder.swift; sourceTree = "<group>"; };
 		7E6DD2E02F881E33003B82FD /* Product+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+Helpers.swift"; sourceTree = "<group>"; };
+		7E6DD2E32F881F84003B82FD /* ProductNavigatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductNavigatorViewModel.swift; sourceTree = "<group>"; };
 		7E9B0A422F7DF92100B0C12F /* A2_iOS_Claire_100882058.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A2_iOS_Claire_100882058.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -41,6 +43,7 @@
 		7E6DD2D22F881892003B82FD /* A2_iOS_Claire_100882058 */ = {
 			isa = PBXGroup;
 			children = (
+				7E6DD2E22F881F77003B82FD /* ViewModels */,
 				7E6DD2DD2F881DF5003B82FD /* Models */,
 				7E6DD2D82F881B77003B82FD /* CoreData */,
 				7E6DD2CE2F881892003B82FD /* A2_iOS_Claire_100882058.xcdatamodeld */,
@@ -66,6 +69,14 @@
 				7E6DD2E02F881E33003B82FD /* Product+Helpers.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		7E6DD2E22F881F77003B82FD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7E6DD2E32F881F84003B82FD /* ProductNavigatorViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		7E9B0A392F7DF92100B0C12F = {
@@ -156,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E6DD2E42F881F86003B82FD /* ProductNavigatorViewModel.swift in Sources */,
 				7E6DD2D52F881892003B82FD /* A2_iOS_Claire_100882058.xcdatamodeld in Sources */,
 				7E6DD2DC2F881C99003B82FD /* ProductSeeder.swift in Sources */,
 				7E6DD2DA2F881B9B003B82FD /* Persistence.swift in Sources */,
