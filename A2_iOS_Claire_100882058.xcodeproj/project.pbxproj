@@ -6,17 +6,26 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7E6DD2D42F881892003B82FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E6DD2D02F881892003B82FD /* Assets.xcassets */; };
+		7E6DD2D52F881892003B82FD /* A2_iOS_Claire_100882058.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E6DD2CE2F881892003B82FD /* A2_iOS_Claire_100882058.xcdatamodeld */; };
+		7E6DD2D62F881892003B82FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6DD2D12F881892003B82FD /* ContentView.swift */; };
+		7E6DD2D72F881892003B82FD /* A2_iOS_Claire_100882058App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6DD2CF2F881892003B82FD /* A2_iOS_Claire_100882058App.swift */; };
+		7E6DD2DA2F881B9B003B82FD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6DD2D92F881B98003B82FD /* Persistence.swift */; };
+		7E6DD2DC2F881C99003B82FD /* ProductSeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6DD2DB2F881C94003B82FD /* ProductSeeder.swift */; };
+		7E6DD2E12F881E38003B82FD /* Product+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6DD2E02F881E33003B82FD /* Product+Helpers.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		7E6DD2CF2F881892003B82FD /* A2_iOS_Claire_100882058App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A2_iOS_Claire_100882058App.swift; sourceTree = "<group>"; };
+		7E6DD2D02F881892003B82FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E6DD2D12F881892003B82FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7E6DD2D32F881892003B82FD /* A2_iOS_Claire_100882058.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = A2_iOS_Claire_100882058.xcdatamodel; sourceTree = "<group>"; };
+		7E6DD2D92F881B98003B82FD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		7E6DD2DB2F881C94003B82FD /* ProductSeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSeeder.swift; sourceTree = "<group>"; };
+		7E6DD2E02F881E33003B82FD /* Product+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+Helpers.swift"; sourceTree = "<group>"; };
 		7E9B0A422F7DF92100B0C12F /* A2_iOS_Claire_100882058.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A2_iOS_Claire_100882058.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		7E9B0A442F7DF92100B0C12F /* A2_iOS_Claire_100882058 */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = A2_iOS_Claire_100882058;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7E9B0A3F2F7DF92100B0C12F /* Frameworks */ = {
@@ -29,10 +38,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E6DD2D22F881892003B82FD /* A2_iOS_Claire_100882058 */ = {
+			isa = PBXGroup;
+			children = (
+				7E6DD2DD2F881DF5003B82FD /* Models */,
+				7E6DD2D82F881B77003B82FD /* CoreData */,
+				7E6DD2CE2F881892003B82FD /* A2_iOS_Claire_100882058.xcdatamodeld */,
+				7E6DD2CF2F881892003B82FD /* A2_iOS_Claire_100882058App.swift */,
+				7E6DD2D02F881892003B82FD /* Assets.xcassets */,
+				7E6DD2D12F881892003B82FD /* ContentView.swift */,
+			);
+			path = A2_iOS_Claire_100882058;
+			sourceTree = "<group>";
+		};
+		7E6DD2D82F881B77003B82FD /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				7E6DD2DB2F881C94003B82FD /* ProductSeeder.swift */,
+				7E6DD2D92F881B98003B82FD /* Persistence.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		7E6DD2DD2F881DF5003B82FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7E6DD2E02F881E33003B82FD /* Product+Helpers.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		7E9B0A392F7DF92100B0C12F = {
 			isa = PBXGroup;
 			children = (
-				7E9B0A442F7DF92100B0C12F /* A2_iOS_Claire_100882058 */,
+				7E6DD2D22F881892003B82FD /* A2_iOS_Claire_100882058 */,
 				7E9B0A432F7DF92100B0C12F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,9 +98,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				7E9B0A442F7DF92100B0C12F /* A2_iOS_Claire_100882058 */,
 			);
 			name = A2_iOS_Claire_100882058;
 			packageProductDependencies = (
@@ -109,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E6DD2D42F881892003B82FD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +156,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E6DD2D52F881892003B82FD /* A2_iOS_Claire_100882058.xcdatamodeld in Sources */,
+				7E6DD2DC2F881C99003B82FD /* ProductSeeder.swift in Sources */,
+				7E6DD2DA2F881B9B003B82FD /* Persistence.swift in Sources */,
+				7E6DD2D62F881892003B82FD /* ContentView.swift in Sources */,
+				7E6DD2D72F881892003B82FD /* A2_iOS_Claire_100882058App.swift in Sources */,
+				7E6DD2E12F881E38003B82FD /* Product+Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +371,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7E6DD2CE2F881892003B82FD /* A2_iOS_Claire_100882058.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7E6DD2D32F881892003B82FD /* A2_iOS_Claire_100882058.xcdatamodel */,
+			);
+			currentVersion = 7E6DD2D32F881892003B82FD /* A2_iOS_Claire_100882058.xcdatamodel */;
+			path = A2_iOS_Claire_100882058.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7E9B0A3A2F7DF92100B0C12F /* Project object */;
 }
