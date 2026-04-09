@@ -25,7 +25,7 @@ struct ProductCardView: View {
                     
                     Text(product.priceText)
                         .font(.headline)
-                        .fontWeight(.bold)
+                        .foregroundColor(Color(red: 0.55, green: 0.44, blue: 0.28))
                 }
                 
                 Spacer()
@@ -47,7 +47,7 @@ struct ProductCardView: View {
         .padding()
         .background(
             RoundedRectangle(cornerRadius: 16)
-                .fill(Color(.systemBackground))
+                .fill(Color.white)
                 .shadow(color: Color.black.opacity(0.08), radius: 8, x: 0, y: 4)
         )
         .overlay(

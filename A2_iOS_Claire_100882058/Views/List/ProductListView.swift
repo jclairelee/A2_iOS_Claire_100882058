@@ -24,10 +24,14 @@ struct ProductListView: View {
                             .foregroundColor(.secondary)
                     }
                     .padding(.vertical, 6)
+                    .listRowBackground(Color.white)
                 }
             }
-            .navigationTitle("All Products")
             .listStyle(.insetGrouped)
+            .scrollContentBackground(.hidden)
+            .background(Color(red: 0.98, green: 0.96, blue: 0.93))
+            .navigationTitle("All Products")
+            
         }
     }
 }
