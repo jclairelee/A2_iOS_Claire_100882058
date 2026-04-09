@@ -8,6 +8,11 @@ struct ContentView: View {
                 .tabItem {
                     Label("Home", systemImage: "house.fill")
                 }
+            
+            ProductListView()
+                .tabItem {
+                    Label("List", systemImage: "list.bullet")
+                }
         }
     }
 }
