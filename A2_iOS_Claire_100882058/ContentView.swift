@@ -24,6 +24,12 @@ struct ContentView: View {
             .tabItem {
                 Label("Search", systemImage: "magnifyingglass")
             }
+            NavigationStack {
+                AddProductView()
+            }
+            .tabItem {
+                Label("Add", systemImage: "plus.circle")
+            }
         }
     }
 }

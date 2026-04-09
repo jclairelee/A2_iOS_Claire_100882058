@@ -19,6 +19,7 @@
 		7E6DD2ED2F882406003B82FD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6DD2EC2F882405003B82FD /* HomeView.swift */; };
 		7E6DD2F02F8827BA003B82FD /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6DD2EF2F8827B6003B82FD /* ProductListView.swift */; };
 		7E6DD2F32F882986003B82FD /* ProductSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6DD2F22F882984003B82FD /* ProductSearchView.swift */; };
+		7E6DD2FA2F883BCB003B82FD /* AddProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6DD2F92F883BCA003B82FD /* AddProductView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		7E6DD2EC2F882405003B82FD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7E6DD2EF2F8827B6003B82FD /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
 		7E6DD2F22F882984003B82FD /* ProductSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSearchView.swift; sourceTree = "<group>"; };
+		7E6DD2F92F883BCA003B82FD /* AddProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductView.swift; sourceTree = "<group>"; };
 		7E9B0A422F7DF92100B0C12F /* A2_iOS_Claire_100882058.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A2_iOS_Claire_100882058.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 		7E6DD2E52F8822AA003B82FD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7E6DD2F82F883BC0003B82FD /* Add */,
 				7E6DD2F12F88297B003B82FD /* Search */,
 				7E6DD2EE2F8827AC003B82FD /* List */,
 				7E6DD2E92F8823E5003B82FD /* Home */,
@@ -129,6 +132,14 @@
 				7E6DD2F22F882984003B82FD /* ProductSearchView.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		7E6DD2F82F883BC0003B82FD /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				7E6DD2F92F883BCA003B82FD /* AddProductView.swift */,
+			);
+			path = Add;
 			sourceTree = "<group>";
 		};
 		7E9B0A392F7DF92100B0C12F = {
@@ -219,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E6DD2FA2F883BCB003B82FD /* AddProductView.swift in Sources */,
 				7E6DD2ED2F882406003B82FD /* HomeView.swift in Sources */,
 				7E6DD2E42F881F86003B82FD /* ProductNavigatorViewModel.swift in Sources */,
 				7E6DD2D52F881892003B82FD /* A2_iOS_Claire_100882058.xcdatamodeld in Sources */,
